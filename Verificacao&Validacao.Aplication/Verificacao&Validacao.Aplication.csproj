@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Verificacao_Validacao.Aplication</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Verificacao&amp;Validacao.Domain\Verificacao&amp;Validacao.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
