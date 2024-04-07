@@ -1,6 +1,4 @@
-﻿
-
-namespace Verificacao_Validacao.Domain.Models;
+﻿namespace Verificacao_Validacao.Domain.Models;
 
 public class Usuario : ClassBase
 {

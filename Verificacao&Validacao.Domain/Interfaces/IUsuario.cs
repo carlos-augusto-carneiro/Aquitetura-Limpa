@@ -1,9 +1,8 @@
 ﻿using Verificacao_Validacao.Domain.Models;
 
-namespace Verificacao_Validacao.Domain.Interfaces
+namespace Verificacao_Validacao.Domain.Interfaces;
+
+public interface IUsuario : IBase<Usuario> 
 {
-    public interface IUsuario : IBase<Usuario> 
-    {
-        public void Atualizar(Guid Id, Usuario usuario);
-    }
+    public void Atualizar(Guid Id, Usuario usuario);
 }
