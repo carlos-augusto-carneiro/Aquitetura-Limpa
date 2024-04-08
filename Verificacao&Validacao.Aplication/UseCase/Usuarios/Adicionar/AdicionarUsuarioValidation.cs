@@ -9,6 +9,6 @@ public sealed class AdicionarUsuarioValidation : AbstractValidator<AdicionarUsua
         RuleFor(x => x.Name).NotEmpty().MaximumLength(64).MinimumLength(3);
         RuleFor(x => x.Email).NotEmpty().MaximumLength(128).EmailAddress();
         RuleFor(x => x.Senha).NotEmpty().MaximumLength(24).MinimumLength(8);
-        RuleFor(x => x.DatadeCriacao).NotEmpty().GreaterThan(x => DateTime.Now);
+        RuleFor(x => x.DatadeCriacao).NotEmpty().LessThan(x => DateTime.Now);
     }
 }

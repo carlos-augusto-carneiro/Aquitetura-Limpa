@@ -20,7 +20,7 @@ public sealed class AdicionarUsuarioHandler : IRequestHandler<AdicionarUsuarioRe
     public Task<AdicionarUsuarioResponse> Handle(AdicionarUsuarioRequest request, CancellationToken cancellationToken)
     {
         var mapearRequest = _mapper.Map<Usuario>(request);
-        mapearRequest.Senha = mapearRequest.Senha.GerarHash();
+        //mapearRequest.Senha = mapearRequest.Senha.GerarHash();
         _usuario.Cadastrar(mapearRequest);
         var mapearReponse = _mapper.Map<AdicionarUsuarioResponse>(mapearRequest);
 

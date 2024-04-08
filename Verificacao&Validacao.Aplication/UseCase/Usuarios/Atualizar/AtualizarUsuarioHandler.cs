@@ -20,7 +20,7 @@ public sealed class AtualizarUsuarioHandler : IRequestHandler<AtualizarUsuarioRe
     public Task<AtualizarUsuarioResponse> Handle(AtualizarUsuarioRequest request, CancellationToken cancellationToken)
     {
         var mapearRequest = _mapper.Map<Usuario>(request);
-        mapearRequest.Senha = mapearRequest.Senha.GerarHash();
+        //mapearRequest.Senha = mapearRequest.Senha.GerarHash();
         _usuario.Atualizar(mapearRequest.Id, mapearRequest);
 
         var response = new AtualizarUsuarioResponse();

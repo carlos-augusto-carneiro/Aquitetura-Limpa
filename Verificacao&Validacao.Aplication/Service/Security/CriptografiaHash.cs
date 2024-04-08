@@ -7,6 +7,11 @@ namespace Verificacao_Validacao.Aplication.Service.Security
     {
         public static string GerarHash(this string Valor)
         {
+            if (string.IsNullOrEmpty(Valor))
+            {
+                throw new ArgumentException("O valor não pode ser nulo ou vazio.", nameof(Valor));
+            }
+
             var hash = SHA256.Create();
             var encoding = new ASCIIEncoding();
             var array = encoding.GetBytes(Valor);
@@ -18,7 +23,6 @@ namespace Verificacao_Validacao.Aplication.Service.Security
             foreach (var item in array)
             {
                 strHexa.Append(item.ToString("x2"));
-
             }
 
             return strHexa.ToString();
