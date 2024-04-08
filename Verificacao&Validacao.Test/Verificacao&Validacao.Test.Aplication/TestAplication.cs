@@ -110,7 +110,6 @@ public class TestAplication
     [TestMethod]
     public void TestAtualizarUsuario()
     {
-        // Arrange
         var request = new AtualizarUsuarioRequest(Guid.NewGuid(), "Novo Nome", "novoemail@example.com", "novasenha123");
 
         var usuarioAtualizado = new Usuario
