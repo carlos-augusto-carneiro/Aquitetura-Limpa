@@ -1,6 +1,4 @@
-﻿
-
-namespace Verificacao_Validacao.Aplication.UseCase.Usuarios.Adicionar;
+﻿namespace Verificacao_Validacao.Aplication.UseCase.Usuarios.Adicionar;
 
 public sealed record AdicionarUsuarioResponse
 {

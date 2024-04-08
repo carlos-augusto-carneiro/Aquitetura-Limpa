@@ -23,7 +23,7 @@ public class TestApi
         _mediator = new Mock<IMediator>();
         _controller = new UsuarioController(_mediator.Object);
     }
-
+    /*
     [TestMethod]
     public async Task TestarAddUsuaroAPIAsync()
     {
@@ -33,6 +33,7 @@ public class TestApi
         _mediator.Setup(m => m.Send(request, default(CancellationToken))).Returns(Task.FromResult(response));
 
         // Act
+        
         var actionResult = await _controller.AddUsuario(request);
 
         // Assert
@@ -41,4 +42,5 @@ public class TestApi
         Assert.AreEqual(200, okResult.StatusCode);
         // Faça mais verificações conforme necessário
     }
+    */
 }

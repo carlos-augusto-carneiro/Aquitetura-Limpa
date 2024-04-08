@@ -64,9 +64,9 @@ public class TestAplication
         
         var metHandle = _handler.Handle(request, CancellationToken.None).Result;
 
-        Assert.AreEqual(response.Name, response.Name);
-        Assert.AreEqual(response.Email, response.Email);
-        Assert.AreEqual(response.DataDeCriacao, response.DataDeCriacao);
+        Assert.AreEqual(response.Name, metHandle.Name);
+        Assert.AreEqual(response.Email, metHandle.Email);
+        Assert.AreEqual(response.DataDeCriacao, metHandle.DataDeCriacao);
         _usuario.Verify(u => u.Cadastrar(It.IsAny<Usuario>()), Times.Once);
     }
 
