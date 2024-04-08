@@ -93,7 +93,7 @@ public class TestAplication
         };
         _usuario.Setup(u => u.Listar()).Returns(usuarios);
 
-        var expectedResponse = usuarios.Select(u => new ListarUsuarioResponse
+        var response = usuarios.Select(u => new ListarUsuarioResponse
         {
             Id = u.Id,
             Name = u.Name,
@@ -101,10 +101,10 @@ public class TestAplication
             DataDeCriacao = u.DataDeCriacao
         }).ToList();
 
-        _mapper.Setup(m => m.Map<List<ListarUsuarioResponse>>(usuarios)).Returns(expectedResponse);
-        var response = _handlerListar.Handle(new ListarUsuarioRequest(), CancellationToken.None).Result;
+        _mapper.Setup(m => m.Map<List<ListarUsuarioResponse>>(usuarios)).Returns(response);
+        var responseHandler = _handlerListar.Handle(new ListarUsuarioRequest(), CancellationToken.None).Result;
 
-        CollectionAssert.AreEqual(expectedResponse, response);
+        CollectionAssert.AreEqual(response, responseHandler);
     }
 
     [TestMethod]
