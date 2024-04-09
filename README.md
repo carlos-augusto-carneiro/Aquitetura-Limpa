@@ -35,3 +35,17 @@ Você deve clonar o repositorio com o git clone:
 ```
 git clone https://github.com/carlos-augusto-carneiro/Verificacao-Validacao.git
 ```
+
+Para rodar o projeto é indicado usar a Ide Visual Studio mas caso queria executar com o VSCode execute o comando
+
+```
+dotnet watch run
+```
+
+E ele abrirar o Swagger
+
+<h1 style="text-align: center;">
+    <div style="display: flex; justify-content: center;">
+        <img src = "C:\Users\carlo\Documents\Projetos\Verificacao&Validacao\Verificacao&Validacao.API\bin\image.png" width="200" height="200">
+    </div>
+</h1>
