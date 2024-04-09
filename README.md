@@ -18,6 +18,18 @@ Este repositório foi usado para o primeiro trabalho da disciplina de **Verifica
 
 ## Como executar?
 
+De inicio deve verificar se na sua maquina tem o **.Net** instalado na maquina. Deve abri o prompt e digitar
+
+```
+dotnet --version
+```
+
+Logo em seguida deve se verificar 
+
+```
+mysql --version
+```
+
 Você deve clonar o repositorio com o git clone:
 
 ```
