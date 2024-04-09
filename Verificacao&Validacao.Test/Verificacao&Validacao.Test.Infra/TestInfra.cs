@@ -9,6 +9,7 @@ namespace Verificacao_Validacao.Test.Verificacao_Validacao.Test.Infra;
 public class TestInfra
 {
     private DbContextOptions<DbUsuario> _context;
+
     [TestInitialize]
     public void Init()
     {
