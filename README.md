@@ -44,8 +44,6 @@ dotnet watch run
 
 E ele abrirar o Swagger
 
-<h1 style="text-align: center;">
-    <div style="display: flex; justify-content: center;">
-        <img src = "C:\Users\carlo\Documents\Projetos\Verificacao&Validacao\Verificacao&Validacao.API\bin\image.png">
-    </div>
-</h1>
+
+<img src = "C:\Users\carlo\Documents\Projetos\Verificacao&Validacao\Verificacao&Validacao.API\bin\image.png">
+    
