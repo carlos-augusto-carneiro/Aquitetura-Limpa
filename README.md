@@ -16,3 +16,9 @@ Este repositório foi usado para o primeiro trabalho da disciplina de **Verifica
 - MySql(8.0)
 - MsTest
 
+## Como executar?
+
+Você deve clonar o repositorio com o git clone:
+
+$ git clone https://github.com/carlos-augusto-carneiro/Verificacao-Validacao.git 
+
