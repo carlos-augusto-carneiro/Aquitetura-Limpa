@@ -20,5 +20,6 @@ Este repositório foi usado para o primeiro trabalho da disciplina de **Verifica
 
 Você deve clonar o repositorio com o git clone:
 
-'''git clone https://github.com/carlos-augusto-carneiro/Verificacao-Validacao.git'''
-
+```
+git clone https://github.com/carlos-augusto-carneiro/Verificacao-Validacao.git
+```
